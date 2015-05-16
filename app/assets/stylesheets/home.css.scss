@@ -1,0 +1,123 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+.headerimage {
+	background-image: image-url('calligraphy-dinner.jpg');
+	background-size: cover;
+	height: 200px;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+	}
+
+@media (max-width: 1020px) {
+	.container {
+			width: 75%;
+		}
+	}
+	
+@media (max-width: 720px) {
+	.container {
+			width: 50%;
+		}
+	}
+
+#nav ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+
+#nav ul li {
+	display: block;
+	width: 33.333333333%;
+	float: left;
+	text-align: center;
+}
+
+#nav ul li a {
+	display: inline;
+	float: left;
+	padding-left: 50px;
+}
+
+#nav:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.header h1 {
+	text-align: center;
+	margin: 0px;
+}
+
+.pricingform {
+	text-align: center;
+}
+
+.paragraph img {
+	float: left;
+	width: 20%;
+	margin-right: 25px;
+}
+
+.secondheader h2 {
+	text-align: center;
+}
+
+#footer ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+#footer ul li {
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+#footer ul li a {
+	display: inline;
+	float: left;
+	padding-left: 50px;
+}
+
+.paragraph:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+

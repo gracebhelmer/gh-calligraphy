@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+	}
+
+@media (max-width: 1020px) {
+	.container {
+			width: 75%;
+		}
+	}
+	
+@media (max-width: 720px) {
+	.container {
+			width: 50%;
+		}
+	}
+
+#nav ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+
+#nav ul li {
+	display: block;
+	width: 33.333333333%;
+	float: left;
+	text-align: center;
+}
+
+#nav ul li a {
+	display: inline;
+	float: left;
+	padding-left: 50px;
+}
+
+#nav:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.header h1 {
+	text-align: center;
+	margin: 0px;
+}
+
+.pricingform {
+	text-align: center;
+}
+
+.paragraph img {
+	float: left;
+	width: 20%;
+	margin-right: 25px;
+}
+
+.secondheader h2 {
+	text-align: center;
+}
+
+#footer ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+#footer ul li {
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+#footer ul li a {
+	display: inline;
+	float: left;
+	padding-left: 50px;
+}
+
+.paragraph:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+
