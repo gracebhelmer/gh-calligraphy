@@ -1,6 +1,7 @@
 <h1>Listing signups</h1>
 
-<table>
+<<div class="table-responsive">
+  <table class="table">
   <thead>
     <tr>
       <th>First name</th>
@@ -23,7 +24,10 @@
     <% end %>
   </tbody>
 </table>
-
+<%= will_paginate @posts %>
 <br>
 
+
 <%= link_to 'New Signup', new_signup_path %>
+
+</div>

@@ -5,7 +5,9 @@ class SignupsController < ApplicationController
   # GET /signups
   # GET /signups.json
   def index
-    @signups = Signup.all
+    @signups = Signup.paginate(:page => params[:page], :per_page => 3)
+    
+      #Post.paginate(:page => params[:page], :per_page => 30)
   end
 
   # GET /signups/1
@@ -29,7 +31,7 @@ class SignupsController < ApplicationController
 
     respond_to do |format|
       if @signup.save
-        format.html { redirect_to @signup, notice: 'Signup was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Signup was successfully created.' }
         format.json { render :show, status: :created, location: @signup }
       else
         format.html { render :new }
